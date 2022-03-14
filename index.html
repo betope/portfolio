@@ -12,7 +12,7 @@
 	<meta name="description" content="Site pessoal de um desenvolvedor front-end">
 </head>
 <body>
-<header class="navbar fixed-top navbar-expand-sm bg-dark navbar-dark">
+<header class="navbar fixed-top navbar-expand-sm bg-dark navbar-dark shadow p-3 mb-5">
 	<nav class="container">
 		<a href="index.html" class="navbar-brand">Beto Pereira</a>
 		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
@@ -24,7 +24,7 @@
 					<a href="index.html" class="nav-link">Home</a>
 				</li>
 				<li class="nav-item">
-					<a href="#projects" class="nav-link">Sobre</a>
+					<a href="#about" class="nav-link">Sobre</a>
 				</li>
 				<li class="nav-item">
 					<a href="#projects" class="nav-link">Projetos</a>
@@ -33,33 +33,55 @@
 					<a href="#blog" class="nav-link">Blog</a>
 				</li>
 				<li class="nav-item">
-					<a href="#blog" class="nav-link">Contato</a>
+					<a href="#" class="nav-link">Contato</a>
 				</li>
 			</ul>
 		</div>
 	</nav>
 </header>
-<section class="hero bg-dark">
-	<div class="col-6">
-		<h1 class="text-light fs-1">Hello! <br> <span class="text-uppercase display-2 fw-bold">I am Beto Pereira</span></h1>
-		<h2 class="fs-1 text-uppercase text-light f">Web Developer</h2>
-			<a href="" class="btn btn-primary text-uppercase">hire me</a>
-			<a href="" class="btn btn-outline-primary text-uppercase">curriculum</a>
-	</div>
-	<div class="col-6">
-		<img class="img-fluid" src="img/boy-image.png" alt="">
+<section class="hero bg-light">
+	<div class="container">
+		<div class="row align-items-center">
+			<div class="col-md-7 col-lg-6  headline">
+				<h1 class="text-dark fs-1">Hello! <br> <span class="text-uppercase display-2 fw-bold">I am Beto Pereira</span></h1>
+				<h2 class="fs-2 text-uppercase text-dark">Web Developer</h2>
+					<a href="" class="btn btn-primary me-4 text-uppercase fw-bold">hire me</a>
+					<a href="" class="btn btn-outline-primary text-uppercase fw-bold">curriculum</a>
+			</div>
+			<div class="col-md-5 col-lg-6 mt-5">
+				<img class="img-fluid" src="img/boy-image.png" alt="">
+			</div>
+		</div>
+		<div class="row justify-content-center mt-5">
+			<a class="text-center fs-1 text-secondary" href="#about">
+				<i class="bi bi-arrow-down"></i>
+			</a>
+		</div>
 	</div>
 </section>
-<section class="container">
+<section id="about" class="about container-xl">
+	<div class="row row-cols- align-items-center">
+		<div class="col-lg-6 col-md-12">
+			<img class="img-fluid" src="img/about-us.png" alt="">
+		</div>
+		<div class="col-lg-6 col-md-12 mt-5">
+			<h2 class="text-uppercase display-5 fw-bold">let me introduce mylself</h2>
+			<p class="fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error rerum iure obcaecati vel possimus officia maiores perferendis ut! Quos, perspiciatis.</p>
+			<p class="fs-5">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here.</p>
+			<a href="" class="btn btn-primary text-uppercase fw-bold">download cv</a>
+		</div>
+	</div>
+</section>
+<section class="container-xl">
 	<header class="mt-5 mb-4">
-		<h2 id="projects">Projetos Recentes</h2>
+		<h2 class="title-h2 text-uppercase fw-bold" id="projects">recently done projects</h2>
 	</header>
 	<div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
 		<div class="col">
 			<div class="card">
 				<img src="img/thumb.png" alt="" class="card-img-top">
 				<div class="card-body">
-					<h5 class="card-title">Project name</h5>
+					<h5 class="card-title text-uppercase fw-bold">Project name</h5>
 					<p class="card-text">Some quick example text to build on the card title and make</p>
 					<a href="https://github.com/betope/task-list-app" target="_blank" class="stretched-link"></a>
 				</div>
@@ -67,37 +89,14 @@
 		</div>
 	</div>
 </section>
-<section class="container mb-5">
-	<header class="mt-5 mb-4">
-		<h2 id="blog">Postagens recentes</h2>
-	</header>
-	<div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
-		<div class="col">
-			<div class="card">
-				<img src="img/thumb-flexbox.jpg" alt="" class="card-img-top">
-				<div class="card-body">
-					<h5 class="card-title">Criando um site responsivo com flexbox - pt. 3</h5>
-					<p class="card-text">Aprenda a criar um site usando flexbox</p>
-						<a href="https://www.aprendaaweb.com.br/criando-um-site-responsivo-com-flexbox-parte-3/" target="_blank" class="btn btn-primary">Leia mais</a>
-				</div>
-			</div>
+<footer class="footer container-fluid">
+		<div class="text-center">
+			<a class="text-dark fw-bold text-decoration-none fs-4 text-uppercase" href="index.html">Beto Pereira</a>
+			<p class="text-uppercase">follow me!</p>
 		</div>
-		<div class="col">
-			<div class="card">
-				<img src="img/thumb-javascript-arrays.png" alt="" class="card-img-top">
-				<div class="card-body">
-					<h5 class="card-title">8 métodos de array em Javascript</h5>
-					<p class="card-text">Aprenda a criar e manipular arrays usando Javascript</p>
-						<a href="https://www.aprendaaweb.com.br/8-metodos-de-array-em-javascript/" target="_blank" class="btn btn-primary">Leia mais</a>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<footer class="container pt-5 pb-3">
 	<div class="icons text-center">
 		<a class="fs-2 text-dark" href="https://github.com/betope" target="_blank"><i class="bi bi-github"></i></a>
-		<a class="fs-2 text-dark mx-4" href="https://www.linkedin.com/in/betopereira/" target="_blank"><i class="bi bi-linkedin"></i></a>
+		<a class="fs-2 text-dark mx-5" href="https://www.linkedin.com/in/betopereira/" target="_blank"><i class="bi bi-linkedin"></i></a>
 		<a class="fs-2 text-dark" href="https://www.aprendaaweb.com.br/" target="_blank"><i class="bi bi-wordpress"></i></a>
 	</div>
 </footer>

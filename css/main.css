@@ -1,3 +1,5 @@
 * {scroll-behavior: smooth;}
-
-.hero {padding: 8rem 2rem;}
+.hero,
+.about,
+.projects,
+.footer {padding: 155px 0;}
