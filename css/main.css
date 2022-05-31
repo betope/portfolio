@@ -2,200 +2,62 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
-html {
-  --primaryBlack: #111;
-  --borderColor: #f1f1f1;
-  --boxShadow: rgba(17, 17, 17, .2);
-  --primaryBlue: #276db3;
-  scroll-behavior: smooth;
-}
-/* HEADER */
-.header-hero-wrapper {background-color: #111;}
 
-.header {
+.no-deco {text-decoration: none;}
+
+.center-text {text-align: center;}
+
+.bg {background-color: #111;}
+
+header {padding: 20px;}
+
+.navbar {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  color: #fff;
+  font-weight: 800;
+  line-height: .8em;
+}
+
+.btn-menu {
+  color: #fff;
+  cursor: pointer;
+  font-size: 2.2em;
+  width: 20px;
+}
+
+.btn-close-menu {
+  color: #fff;
+  cursor: pointer;
   display: grid;
-  grid-template-columns: 1fr;
-  justify-items: center;
+  justify-items: end;
+  margin-bottom: 10px;
+}
+
+.navigation {
+  background-color: rgba(0, 0, 0, .9);
+  display: none;
   margin: 0 auto;
-  max-width: 62.5em;
-  padding: 1.25em;
+  padding: 1em;
+  position: absolute;
+  right: 0;
+  top: 28px;
 }
 
-.logo {margin-bottom: 1.25em;}
+.menu {list-style-type: none;}
 
-.logo,
+.nav-item {margin-bottom: 1.25em;}
+
 .nav-link {
-  color: #fff;  
-  font-weight: 500;
-  text-transform: capitalize;
-}
-
-.menu {
-  list-style-type: none;
-  display: flex;
-}
-
-.menu-item:not(:last-child) {margin-right: 1.5625em;}
-
-.hero {
   color: #fff;
-}
-
-.icon {
-  color: #fff;
-}
-
-/* ABOUT ME */
-.about-wrapper {
-  display: flex;
-  justify-content: center;
-  margin-top: 60px;
-  padding: 3.125rem 1.25rem 0;
-}
-
-.about-me {
-  max-width: 37.5rem;
-  text-align: left;
-  width: 100%;
-}
-
-.about-me a {
-  color: var(--primaryBlue);
-  font-weight: 700;
-  text-decoration: none;
-}
-
-.who-iam {
-  font-size: 1.25rem;
   font-weight: 600;
 }
 
-.description {
-  font-size: 1.125rem;
-}
-/* JOBS */
-.projects-wrapper {
-  justify-content: center;
-  padding: 5rem 1.25rem;
-}
-
-.projects-wrapper h2 {margin-bottom: 1.875rem;}
-
-.blog,
-.projects,
-.header-section {
-  margin: auto;
-  max-width: 60rem;
-}
-
-.projects {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.job {
-  border: 1px solid var(--borderColor);
-  border-radius: 5px;
-  box-shadow: 1px 1px 4px var(--boxShadow);
-  max-width: 18.75rem;
-  padding: 1.25rem 1.25rem 0;
-  transition: .2s ease;
-}
-.job-thumb {
-  display: block;
-  margin: 0 auto;
-}
-
-.job:not(:last-child) {margin-bottom: 1.875rem;}
-
-.job-link {
-  color: var(--primaryBlack);
-  text-decoration: none;
-  transition: .2s ease;
-}
-
-.job:hover {border-color: var(--primaryBlue);}
-
-.job-link:hover {color: var(--primaryBlue);}
-
-.job-name {
-  font-size: 1.25rem;
-  font-weight: 700;
-  margin: 15px 0;
-}
-
-.job-snippet {margin-bottom: 1.25rem;}
-
-.blog-wrapper {padding: 5rem 1.25rem;}
-
-.blog-wrapper h2 {margin-bottom: 1.875rem;}
-
-.blog {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.post {
-  border: 1px solid var(--borderColor);
-  border-radius: 5px;
-  box-shadow: 1px 1px 4px var(--boxShadow);
-  max-width: 18.75rem;
-  padding: 1.25rem 1.25rem 0;
-  transition: .2s ease;
-}
-
-.post:not(:last-child) {margin-bottom: 1.875rem;}
-
-.post-link {
-  color: var(--primaryBlack);
-  text-decoration: none;
-  transition: .2s ease;
-}
-
-.post:hover {border-color: var(--primaryBlue);}
-
-.post-link:hover {color: var(--primaryBlue);}
-
-.post-snippet {margin-bottom: 1.25rem;}
-
-.social-icons {
-  background: var(--white);
-  border-top: 1px solid var(--borderColor);
-  bottom: 0;
-  display: flex;
-  padding: .9375rem 0;
-  position: sticky;
-  justify-content: center;
-  width: 100%;
-}
-
-.s-icon {
-  color: var(--primaryBlack);
-  font-size: 1.5rem;
-  transition: .2s ease;
-}
-
-.s-icon:hover {color: var(--primaryBlue);}
-
-.s-icon:not(:last-child) {margin-right: 1.25rem;}
-
-.footer {padding-bottom: .9375rem;}
-
-.copyright {text-align: center;}
-
-.copyright a {
-  color: var(--primaryBlack);
-  text-decoration: none;
-}
-
-@media only screen and (min-width: 570px) {
-  .blog,
-  .projects {flex-direction: row;}
-
-  .job:not(:last-child),
-  .post:not(:last-child) {margin: 0 1.875rem 0 0;}
+span a {
+  color: #fff;
+  font-size: 22px;;
 }
