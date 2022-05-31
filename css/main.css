@@ -26,13 +26,11 @@ html {
   padding: 1.25em;
 }
 
-.logo {
-  margin-bottom: 1.25em;
-}
+.logo {margin-bottom: 1.25em;}
 
 .logo,
 .nav-link {
-  color: #fff;
+  color: #fff;  
   font-weight: 500;
   text-transform: capitalize;
 }
@@ -43,6 +41,14 @@ html {
 }
 
 .menu-item:not(:last-child) {margin-right: 1.5625em;}
+
+.hero {
+  color: #fff;
+}
+
+.icon {
+  color: #fff;
+}
 
 /* ABOUT ME */
 .about-wrapper {
