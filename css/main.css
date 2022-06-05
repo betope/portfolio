@@ -61,3 +61,22 @@ span a {
   color: #fff;
   font-size: 22px;;
 }
+
+.hero {
+  align-items: center;
+  height: 60vh;
+  display: grid;
+  justify-items: center;
+}
+
+.heroline {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.mobile,
+.tablet,
+.laptop {
+  color: #fff;
+  font-size: 5em;
+}
