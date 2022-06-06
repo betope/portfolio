@@ -9,7 +9,7 @@
 
 .bg {background-color: #111;}
 
-header {padding: 20px;}
+header {padding: 1.25em;}
 
 .navbar {
   align-items: center;
@@ -62,6 +62,8 @@ span a {
   font-size: 22px;;
 }
 
+/* HERO ANIMATION */
+
 .hero {
   align-items: baseline;
   display: grid;
@@ -100,4 +102,24 @@ span a {
   0% {opacity: 0;}
   23.333% {opacity: 1;}
   33.333% {opacity: 0;}
+}
+
+/* ABOUT */
+.about {padding: 5em 1.25em;}
+
+.about h2 {margin-bottom: 1.25em;}
+
+.about a {color: rgb(88, 88, 88);}
+
+.about p {
+  color: rgb(88, 88, 88);
+  font-weight: 600;
+  margin-bottom: 1.25em;
+}
+
+.stack {margin: 1.875em 0;}
+
+.stack-icon {
+  font-size: 2.5em;
+  margin-right: .2em;
 }
