@@ -9,6 +9,19 @@
 
 .bg {background-color: #111;}
 
+.img-resp {
+  height: auto;
+  max-width: 100%;
+}
+
+.content-wrapper {
+  margin: 0 auto;
+  max-width: 62.5em;
+}
+
+
+.mb-1 {margin-bottom: 1.25em;}
+
 header {padding: 1.25em;}
 
 .navbar {
@@ -107,8 +120,6 @@ span a {
 /* ABOUT */
 .about {padding: 5em 1.25em;}
 
-.about h2 {margin-bottom: 1.25em;}
-
 .about a {color: rgb(88, 88, 88);}
 
 .about p {
@@ -122,4 +133,31 @@ span a {
 .stack-icon {
   font-size: 2.5em;
   margin-right: .2em;
+}
+
+/* PORTFOLIO */ 
+.portfolio {
+  margin: 0 auto;
+  padding: 5em 1.25em;
+}
+.tab {
+  display: flex;
+}
+
+.tab-link {
+  color: #9f9f9f;
+  cursor: pointer;
+  margin-right: 1.25em;
+  text-decoration: none;
+}
+
+.active {
+  color: #111;
+  display: grid;
+  text-decoration: underline;
+}
+
+.tab-content {
+  display: none;
+  grid-template-columns: 1fr 1fr;
 }

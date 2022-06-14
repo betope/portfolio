@@ -49,10 +49,10 @@
 		</div>
 	</div>
 	<section class="about">
-		<h2 class="title-section">Sobre</h2>
+		<h2 class="mb-1">Sobre</h2>
 		<p>Olá, meu nome é Beto Pereira e sou desenvolvedor frontend freelancer. Atualmente trabalho com Help Desk na <a href="#">Porsche Consulting</a></p>
 		<p>Sou criador do <a href="#">www.aprendaaweb.com.br</a> onde escrevo sobre frontend, e no meu <a href="#">GitHub</a> tenho alguns projetos onde me arrisco um pouco no backend</p>
-		<p>Abaixo você pode ver algumas das tecnologias que uso em meu projetos. Caso queira contratar para um freelance ou ver meu currículo, os links estão abaixo. 😀</p>
+		<p>Abaixo você pode ver algumas das tecnologias que uso em meu projetos. Caso queira me contratar para um freelance ou ver meu currículo, os links estão abaixo. 😀</p>
 
 		<div class="stack">
 			<span class="stack-icon" aria-label=""><i class="lab la-html5"></i></span>
@@ -65,6 +65,27 @@
 		</div>
 		<a href="#">Contratar</a>
 		<a href="#">Ver CV</a>
+	</section>
+	<section class="portfolio">
+		<div class="content-wrapper">
+			<h2 class="mb-1">Trabalhos</h2>
+			<div class="tab mb-1">
+				<a class="tab-link" onclick="openTab(event, 'lab')" id="defaultOpen">Lab</a>
+				<a class="tab-link" onclick="openTab(event, 'templates')">Templates</a>
+				<a class="tab-link" onclick="openTab(event, 'apps')">Apps</a>
+			</div>
+			<div id="lab" class="tabcontent">
+				<img class="img-resp" src="https://picsum.photos/id/55/300/300" alt="">
+				<img class="img-resp" src="https://picsum.photos/id/200/300/300" alt="">
+			</div>
+			<div id="templates" class="tabcontent">
+				<img class="img-resp" src="https://picsum.photos/id/556/300/300" alt="">
+				<img class="img-resp" src="https://picsum.photos/id/223/300/300" alt="">
+			</div>
+			<div id="apps" class="tabcontent">
+				<img class="img-resp" src="https://picsum.photos/id/6/300/300" alt="">
+				<img class="img-resp" src="https://picsum.photos/id/100/300/300" alt="">
+			</div>
 	</section>
 	<script src="js/scripts.js"></script>
 </body>
