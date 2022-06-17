@@ -25,3 +25,17 @@ function openTab(e, tabName) {
   e.currentTarget.className += " active";
 }
 document.getElementById("defaultOpen").click();
+
+// Show and hide card info
+let showInfo = document.querySelector('.plus-icon').addEventListener('click', () => {
+  let cardInfo = document.querySelector('.card-info');
+  cardInfo.style.display = 'flex';
+  let pjName = document.querySelector('.pj-name').style.display = 'none'
+  let showInfo = document.querySelector('.plus-icon').style.display = 'none'
+
+  let closeInfo = document.querySelector('.close-info').addEventListener('click', () => {
+    cardInfo.style.display = 'none';
+    let showInfo = document.querySelector('.plus-icon').style.display = 'block'
+    let pjName = document.querySelector('.pj-name').style.display = 'block'
+  })
+})

@@ -140,9 +140,7 @@ span a {
   margin: 0 auto;
   padding: 5em 1.25em;
 }
-.tab {
-  display: flex;
-}
+.tab {display: flex;}
 
 .tab-link {
   color: #9f9f9f;
@@ -152,12 +150,60 @@ span a {
 }
 
 .active {
+  border-bottom: 1px solid #9f9f9f;
   color: #111;
   display: grid;
-  text-decoration: underline;
 }
 
 .tab-content {
   display: none;
   grid-template-columns: 1fr 1fr;
+}
+
+.card {
+  align-items: center;
+  background-image: url("https://picsum.photos/id/55/300/300");
+  border-radius: 10px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  justify-content: center;
+  max-width: 300px;
+  text-align: center;
+}
+
+.dark-effect {
+  align-items: center;
+  background-color: rgba(0, 0, 0, .6);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+
+.plus-icon,
+.close-info {
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  font-size: 2em;
+}
+
+.card-info {
+  align-items: center;
+  display: none;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  padding: 15px;
+  position: absolute;
+}
+
+.card-info a {
+  color: #9f9f9f;
+  padding: 10px;
 }
