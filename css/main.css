@@ -2,6 +2,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
+html {
+  --mb-1: 1.25em;
+}
 
 .no-deco {text-decoration: none;}
 
@@ -20,7 +23,7 @@
 }
 
 
-.mb-1 {margin-bottom: 1.25em;}
+.mb-1 {}
 
 header {padding: 1.25em;}
 
@@ -207,3 +210,9 @@ span a {
   color: #9f9f9f;
   padding: 10px;
 }
+
+/* CONTACT */
+
+.contact h2 {margin-bottom: calc(var(--mb-1) * 2);}
+
+.form-contact
