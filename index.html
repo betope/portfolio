@@ -151,15 +151,15 @@
 	<section class="contact">
 		<h2 class="center-text mb-1">Contato</h2>
 		<div class="contact-wrapper">
-			<form class="form-contact" action="">
+			<form class="form-contact" method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>">
 				<label for="">Nome</label>
-				<input type="text" placeholder="Escreva seu nome" required>
+				<input name="name" type="text" placeholder="Escreva seu nome" required>
 				<label for="">Email</label>
-				<input type="email" placeholder="Escreva seu email" required>
+				<input name="email" type="email" placeholder="Escreva seu email" required>
 				<label for="">Assunto</label>
-				<input type="text" placeholder="Escreva o assunto da mensagem" required>
+				<input name="subject" type="text" placeholder="Escreva o assunto da mensagem" required>
 				<label for="">Mensagem</label>
-				<textarea name="" id="" placeholder="Escreva sua mensagem" required></textarea>
+				<textarea name="message" id="" placeholder="Escreva sua mensagem" required></textarea>
 				<button class="btn-submit" type="submit">Enviar</button>
 			</form>
 			<div class="contact-info">
@@ -176,5 +176,6 @@
 		</div>
 	</section>
 	<script src="js/scripts.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
 </body>
 </html>

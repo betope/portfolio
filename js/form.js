@@ -1,1 +1,35 @@
-$(function() {function after_form_submitted(data) {if(data.result=='success') {$('form#reused_form').hide();$('#success_message').show();$('#error_message').hide();} else {$('#error_message').append('<ul></ul>');jQuery.each(data.errors,function(key,val) {$('#error_message ul').append('<li>'+key+':'+val+'</li>');});$('#success_message').hide();$('#error_message').show();$('button[type="button"]',$form).each(function() {$btn=$(this);label=$btn.prop('orig_label');if(label) {$btn.prop('type','submit');$btn.text(label);$btn.prop('orig_label','');}});}} $('#reused_form').submit(function(e) {e.preventDefault();$form=$(this);$('button[type="submit"]',$form).each(function() {$btn=$(this);$btn.prop('type','button');$btn.prop('orig_label',$btn.text());$btn.text('Sending ...');});$.ajax({type:"POST",url:'handler.php',data:$form.serialize(),success:after_form_submitted,dataType:'json'});});});
+const constraints = {
+       name: {
+           presence: { allowEmpty: false }
+       },
+       email: {
+           presence: { allowEmpty: false },
+           email: true
+       },
+       message: {
+           presence: { allowEmpty: false }
+       }
+   };
+
+   const form = document.getElementById('form-contact');
+
+   form.addEventListener('submit', function (event) {
+     const formValues = {
+         name: form.elements.name.value,
+         email: form.elements.email.value,
+         subject: form.elements.subject.value,
+         message: form.elements.message.value
+     };
+
+     const errors = validate(formValues, constraints);
+
+     if (errors) {
+       event.preventDefault();
+       const errorMessage = Object
+           .values(errors)
+           .map(function (fieldValues) { return fieldValues.join(', ')})
+           .join("\n");
+
+       alert(errorMessage);
+     }
+   }, false);
