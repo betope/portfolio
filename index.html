@@ -151,7 +151,7 @@
 	<section class="contact">
 		<h2 class="center-text mb-1">Contato</h2>
 		<div class="contact-wrapper">
-			<form class="form-contact" method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>">
+			<form class="form-contact" method="post" action="https://formsubmit.co/f392628cb13fb26d22157babeb500e5e">
 				<label for="">Nome</label>
 				<input name="name" type="text" placeholder="Escreva seu nome" required>
 				<label for="">Email</label>
@@ -161,6 +161,7 @@
 				<label for="">Mensagem</label>
 				<textarea name="message" id="" placeholder="Escreva sua mensagem" required></textarea>
 				<button class="btn-submit" type="submit">Enviar</button>
+				<input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
 			</form>
 			<div class="contact-info">
 				<h3>Redes sociais</h3>
